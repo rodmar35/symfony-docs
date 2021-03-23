@@ -308,6 +308,12 @@ You can now use the ``asset()`` function:
 
     {# the JS file lives at "public/bundles/acme/js/loader.js" #}
     <script src="{{ asset('bundles/acme/js/loader.js') }}"></script>
+    
+You can now use the ``asset()`` function with variable:
+
+.. code-block:: html+twig
+
+    <img src="{{ asset('images/'~ myvariable ~'.png')}}" alt="Symfony!"/>
 
 The ``asset()`` function's main purpose is to make your application more portable.
 If your application lives at the root of your host (e.g. ``https://example.com``),
